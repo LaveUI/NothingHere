@@ -1,0 +1,48 @@
+body{
+    font-family: 'press start', sans-serif;
+    background: url('image.jpg') no-repeat center fixed;
+    background-size: cover;
+    color: blue;
+    margin: 0;
+    padding: 0;
+}
+
+header h1{
+    text-align: center;
+    color: aqua;
+    text-shadow: 0 0 10px black, 0 0 20px grey;
+}
+header h2{
+    text-align: center;
+    color: aqua;
+    text-shadow: 0 0 10px black, 0 0 20px grey;
+}
+
+.menu{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.button1{
+    background-color: brown;
+    color: blueviolet;
+    border: 2px solid green;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.button2{
+    background-color: aquamarine;
+    color: aliceblue;
+    box-shadow: 0 0 20px black;
+}
+
+footer{
+    text-align: center;
+    margin-top: 500px;
+    margin-left: 400px;
+    color: bisque;
+}
