@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+
+</head>
+<body>
+    <p><a href="index.html" class="button1">Back to Home</a></p>
+    <div class="login-container">
+        <h2>Login to website</h2>
+        <form class="login-form">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter your username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="button1">Login</button>
+        </form>
+        <p class="option">
+            <a href="#">Sign Up</a> | <a href="#">Forgot Password?</a>
+        </p>
+    </div>
+    <script>
+        document.querySelector('.login-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const username = document.getElementById('username').value.trim();
+            const password = document.getElementById('password').value.trim();
+
+            if (username === 'hello' && password === '111') {
+                alert('Login successful! Redirecting to the main site...');
+                window.location.href = 'index.html';
+            } else {
+                alert('Invalid credentials. Please try again!');
+            }
+        });
+    </script>
+    <form action="process_login.php" method="post" class="login-form">
+        <div class="g-recaptcha" data-sitekey="6LfjyboqAAAAAFJBoR-IW67riSq04tq0NSTN8F2v"></div>
+        
+    </form>
+    
+
+</body>
+
+<head>
+    
+</head>
+
+</html>
