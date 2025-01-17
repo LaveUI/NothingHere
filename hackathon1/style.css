@@ -1,16 +1,19 @@
 body{
     font-family: 'press start', sans-serif;
-    background: url('image.jpg') no-repeat center fixed;
+    background: url('retro1.png') no-repeat center fixed;
     background-size: cover;
+    align-items: center;
+    justify-content: center;
     color: blue;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 header h1{
     text-align: center;
     color: aqua;
-    text-shadow: 0 0 10px black, 0 0 20px grey;
+    text-shadow: 0 0 10px black, 0 0 20px rgb(200, 67, 67);
 }
 header h2{
     text-align: center;
@@ -23,7 +26,7 @@ header h2{
     margin-top: 50px;
 }
 
-.button1{
+.button{
     background-color: brown;
     color: blueviolet;
     border: 2px solid green;
@@ -34,9 +37,9 @@ header h2{
     text-transform: uppercase;
 }
 
-.button2{
+.button:hover{
     background-color: aquamarine;
-    color: aliceblue;
+    color: rgb(85, 156, 219);
     box-shadow: 0 0 20px black;
 }
 
@@ -45,4 +48,78 @@ footer{
     margin-top: 500px;
     margin-left: 400px;
     color: bisque;
+}
+
+.login-container{
+    text-align: center;
+    background: transparent;
+    border: 2px solid rgba(241, 236, 236, 0.86);
+    backdrop-filter: blur(20px);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0,2);
+    width: 90%;
+    max-width: 400px;
+}
+.login-container h1 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    color: #ffcc00; /* Arcade-style yellow */
+    text-shadow: 2px 2px 0 #000, 4px 4px 0 #ff3333; /* Retro text shadow */
+}
+
+.login-form input{
+    width: 100%;
+    padding: .8rem;
+    margin-bottom: 1rem;
+    border-radius: 20px;
+    border: none;
+    font-size: 1rem;
+    background-color: #333;
+    color: #fff;
+}
+
+.login-form input::placeholder{
+    color: rgb(169, 145, 145);
+    font-style: italic;
+}
+
+/*submit button*/
+.login-form button{
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    background-color: #5138c0;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, .2);
+    transition: all 0.3s ease-in-out;
+}
+.login-form button:hover{
+    background-color: #3d16ef;
+    transform: translateY(-2px);
+}
+.button1{
+    color:rgba(155, 124, 234, 0.782);
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+.button1:hover{
+    color:#3d16ef;
+}
+
+@media(max-width:480px){
+    .login-container{
+        padding: 1rem;
+    }
+    .login-container h1{
+        font-size: 1.2rem;
+    }
+    .login-form input,
+    .login-form button{
+        font-size: 0.9rem;
+    }
 }
